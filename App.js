@@ -8,7 +8,7 @@ export default function App() {
       <View style={styles.container}>
           <View style={styles.appbar}>
               <View>
-                  <Text>MEMOT</Text>
+                  <Text style={styles.appbarTitle}>MEMOT</Text>
               </View>
           </View>
           <View style={styles.memoList}>
@@ -43,8 +43,23 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ddd',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  appbar: {
+      position: 'absolute',
+      top: 0,
+      right: 0,
+      left: 0,
+      height: 60,
+      paddingTop: 30,
+      backgroundColor: '#265336',
+      justifyContent: 'center',
+      alignItems: 'center',
+  },
+  appbarTitle: {
+      color: '#fff',
+      fontSize: 18,
   },
 });
