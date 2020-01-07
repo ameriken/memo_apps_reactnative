@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 
-class BodyText extends Reaact.Component{
+class BodyText extends React.Component{
     render() {
         return (
             <View>
@@ -18,5 +18,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#eee',
     },
 });
+
 export default BodyText;
 
